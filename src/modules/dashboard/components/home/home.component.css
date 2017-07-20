@@ -1,0 +1,30 @@
+.dashboard_header {
+  background-color: #76bd22;
+  padding: 25px;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-weight: 300;
+  color: #fff;
+}
+
+span {
+  color: #fff;
+}
+
+a {
+  color: #ff9;
+  cursor: default;
+  text-decoration: none;
+}
+
+.titles {
+  font-size: 16px;
+}
+
+span {
+  display:inline-block;
+  padding-right: 20px;
+  padding-left: 10px;
+}

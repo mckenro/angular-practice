@@ -1,0 +1,15 @@
+footer {
+  text-align: center;
+  color: grey;
+  opacity: 50%;
+  font-size: 12px;
+  margin-bottom: -50px;
+}
+
+a {
+  color: black;
+}
+
+.container {
+  text-align: center;
+}

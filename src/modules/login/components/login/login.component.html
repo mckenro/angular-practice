@@ -1,0 +1,13 @@
+<h2>
+  iSpot.tv
+</h2>
+<form>
+  <div class="form-group">
+    <input placeholder="email" class="form-control" #username>
+  </div>
+  <div class="form-group">
+    <input placeholder="password" class="form-control" #password>
+  </div>
+  <button (click)="login(username.value, password.value)" type="login">Sign In</button>
+</form>
+<h4>New to iSpot.tv? <a (click)="signUp()">Sign up</a></h4>

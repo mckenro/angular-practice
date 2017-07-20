@@ -1,0 +1,38 @@
+<div class="container">
+  <header class="main">
+
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded main hidden-print nav-dashboard">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" routerLink="">
+      <img src="https://d3ds6z1w6yhmzj.cloudfront.net/img/ispot/logo.svg" alt="iSpot.tv" style="width:90px">
+    </a>
+    <app-dashboard-menu></app-dashboard-menu>
+    <ul class="float-*-right">
+      <form>
+        <input class="search-box__input typeahead typeahead1 form-control" data-search='{"id":1,"sslServer":"https://d3ds6z1w6yhmzj.cloudfront.net"}' type="text" placeholder="Search..." style="border-color:#ccc">
+        <a class="search-box__button js-search-all js-search-all1" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+      </form>
+    </ul>
+  </nav>
+</header>
+
+  <section id="app-container">
+    <router-outlet name="popup"></router-outlet>
+    <router-outlet></router-outlet>
+  </section>
+
+  <footer>
+    <div class="container" layout="row">
+      <div>
+        <p>
+          &copy; 2017 iSPot.tv, Inc.
+          <a routerLink="agreements/terms">Terms |</a>
+          <a routerLink="agreements/privacy">Privacy |</a>
+          <a routerLink="agreements/copyright">Copyright</a>
+        </p>
+      </div>
+    </div>
+</footer>
+</div>
