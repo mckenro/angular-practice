@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
- import { ChartService } from '../../services/chart.service'
+import { Component, OnInit } from '@angular/core'
+import { ChartService } from '../../services/chart.service'
 
 @Component({
   selector: 'app-dashboard-chart',
@@ -9,10 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class DashboardChartComponent implements OnInit {
+  protected chartMaker
   constructor(protected chartService: ChartService) { }
 
   ngOnInit() {
-    this.chartService.donutChart()
+    this.makeDonut()
   }
 
+  makeDonut() {
+    this.chartService.donutChart().subscribe(
+      (data) => this.chartMaker = data
+    )
+  }
 }

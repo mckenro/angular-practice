@@ -4,6 +4,7 @@ import { HttpService } from '../../../providers/http.service'
 
 import { Http } from '@angular/http'
 import { Observable } from 'rxjs/Rx'
+import 'rxjs/Rx'
 
 @Injectable()
 export class MetricsService {
@@ -13,7 +14,7 @@ export class MetricsService {
   }
 
   totalImpressions() {
-    return this.httpService.get('').map(
+    return this.httpService.get('/todos/20').map(
       response => response.json(),
       error => {
         console.log(error)
@@ -22,7 +23,7 @@ export class MetricsService {
   }
 
   averageViewRate() {
-    return this.httpService.get('').map(
+    return this.httpService.get('/albums/56').map(
       response => response.json(),
       error => {
         console.log(error)
@@ -31,7 +32,7 @@ export class MetricsService {
   }
 
   tvSpend() {
-    return this.httpService.get('').map(
+    return this.httpService.get('todos/190').map(
       response => response.json(),
       error => {
         console.log(error)
@@ -40,7 +41,7 @@ export class MetricsService {
   }
 
   impressionTypes() {
-    return this.httpService.get('').map(
+    return this.httpService.get('todos/62').map(
       response => response.json(),
       error => {
         console.log(error)
@@ -49,7 +50,7 @@ export class MetricsService {
   }
 
   ratesOfViewing() {
-    return this.httpService.get('').map(
+    return this.httpService.get('todos/81').map(
       response => response.json(),
       error => {
         console.log(error)

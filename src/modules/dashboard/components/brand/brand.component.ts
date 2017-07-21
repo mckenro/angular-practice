@@ -16,7 +16,13 @@ export class DashboardBrandComponent implements OnInit {
   protected viewingRatesMetrics
   constructor(protected metricsService: MetricsService) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.impressions()
+    this.industryAverage()
+    this.estTvSpend()
+    this.impressionsByType()
+    this.viewRates()
+  }
 
   impressions() {
     this.metricsService.totalImpressions().subscribe(
